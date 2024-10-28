@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=/" />
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; URL=./">
+    <script type="text/javascript">
+      // This script handles client-side navigation when a 404 happens
+      var redirect = window.location.protocol + "//" + window.location.host + "/#" + window.location.pathname;
+      window.location.replace(redirect);
+    </script>
   </head>
-  <body>
-  </body>
+  <body></body>
 </html>
