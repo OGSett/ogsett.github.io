@@ -21,7 +21,9 @@ const Home = ({burgerDiv, setBurgerDiv}) => {
     return ( 
         <div className='HomeWrapper'>
             <div className="NavBarsection">
-                <img src={logo} className='logo' alt="" />
+                <a href='/'>
+                    <img src={logo} className='logo' alt="" />
+                </a>
                 <img src={iconB} onClick={handleBurger} className='burger' alt="" />
                 {burgerDiv ? (
                     <div className='ss'>
@@ -88,7 +90,7 @@ const Home = ({burgerDiv, setBurgerDiv}) => {
                         <span className='homeSpan1'>SO, YOU WANT TO TRAVEL TO</span>
                         <span className='space'>space</span>
                         
-                        <p>Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
+                        <p>Let’s face it if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
                     </div>
                 </div>
                 <div className='circledes'>

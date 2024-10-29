@@ -47,7 +47,9 @@ const CrewPage = ({burgerDiv, setBurgerDiv}) => {
     return (
         <div className="crewWrpper">
             <div className="NavBarsection">
-                <img src={logo} className='logo' alt="" />
+            <a href='/'>
+                    <img src={logo} className='logo' alt="" />
+                </a>
                 <img src={iconB} onClick={handleBurger} className='burger' alt="" />
                 {burgerDiv ? (
                     <div className='ss'>
@@ -122,12 +124,12 @@ const CrewPage = ({burgerDiv, setBurgerDiv}) => {
                     <img src={currentCew.images.png} alt="" />
                 </div>
               </div>
-              <div className='holder hide'>
+              {/* <div className='holder hide'>
                 <div className='dot' onClick={updateToCrew1}></div>
                 <div className='dot' onClick={updateToCrew2}></div>
                 <div className='dot' onClick={updateToCrew3}></div>
                 <div className='dot' onClick={updateToCrew4}></div>
-              </div>
+              </div> */}
               <div className='crew-content'>
                 <div className='roleandname'>
                     <span className='role'>{currentCew.role}</span>
@@ -135,10 +137,10 @@ const CrewPage = ({burgerDiv, setBurgerDiv}) => {
                 </div>
                 <p>{currentCew.bio}</p>
                 <div className='holder hidemob'>
-                <div className='dot' onClick={updateToCrew1}></div>
-                <div className='dot' onClick={updateToCrew2}></div>
-                <div className='dot' onClick={updateToCrew3}></div>
-                <div className='dot' onClick={updateToCrew4}></div>
+                <div className={currentIndex === 0 ? 'dotoff' : 'dot'} onClick={updateToCrew1}></div>
+                <div className={currentIndex === 1 ? 'dotoff' : 'dot'} onClick={updateToCrew2}></div>
+                <div className={currentIndex === 2 ? 'dotoff' : 'dot'} onClick={updateToCrew3}></div>
+                <div className={currentIndex === 3 ? 'dotoff' : 'dot'} onClick={updateToCrew4}></div>
               </div>
               </div>
             </div>

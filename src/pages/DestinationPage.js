@@ -47,7 +47,9 @@ const Destinations = ({burgerDiv, setBurgerDiv}) => {
     return (
         <div className="DestWrpper">
             <div className="NavBarsection">
-                <img src={logo} className='logo' alt="" />
+            <a href='/'>
+                    <img src={logo} className='logo' alt="" />
+                </a>
                 <img src={iconB} onClick={handleBurger} className='burger' alt="" />
                 {burgerDiv ? (
                     <div className='ss'>
