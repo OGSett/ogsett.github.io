@@ -5,12 +5,14 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Destinations from './pages/DestinationPage';
 import CrewPage from './pages/CrewPage';
 import TechPage from './pages/Technology';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [burgerDiv, setBurgerDiv] = useState(false);
 
   return (
     <div className="App">
+      <Analytics />
       <Router  >
         <Routes>
           <Route path='/' element={<Home setBurgerDiv={setBurgerDiv} burgerDiv={burgerDiv} />} />
